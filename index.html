@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reddit clone</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="reddit clone3.css">
+    <link rel="stylesheet" href="extra.css">
+</head>
+
+<body>
+<!--To create header of these page-->    
+<header class="header">
+  <img src="reddit3.png" alt="#" class="logo-reddit">
+  <a href="#" class="logo"><span>r</span>eddit</a>
+         <button class="search-reddit"><i class="fas fa-search" id="search-icon"></i>Search Reddit</button>
+         <a class="open-button" onclick="openForm()">LogIn</a>
+         <div class="form-popup" id="myForm">
+             <form action="no-action" class="form-container">
+                 <h1>Login</h1>
+         
+             <label for="email"><b>Login-Id</b></label>
+             <input type="text" placeholder="Enter Id" name="email" required>
+         
+             <label for="psw"><b>Password</b></label>
+             <input type="password" placeholder="Enter Password" name="psw" required>
+         
+             <button type="submit" class="btn">Login</button>
+             <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+           </form>
+         </div>
+</header>
+
+<!--To create the trending today section of these page-->
+<section class="heading" id="heading">
+    <h1> Trending today</h1>
+</section>
+<section class="banner" id="banner">
+    <div class="ipl">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, laboriosam?</p>
+            <a href="https://www.google.com/search?q=ipl+points+table&rlz=1C1JJTC_enIN990IN990&sxsrf=APq-WBtz43wmOyUatAfr
+            o7VYJjkh9gjolQ%3A1649740368543&ei=UApVYtDZIIvs2roP2K61yAM&oq=ipl+&gs_lcp=Cgdnd3Mtd2l6EAEYAzIKCAAQsQMQgwEQQzIKCAAQsQMQgwEQQzIKC
+            C4QsQMQgwEQQzIKCAAQsQMQgwEQQzILCAAQgAQQsQMQgwEyBAgAEEMyCggAELEDEIMBEEMyCggAELEDEIMBEEMyCggAEIAEEIcCEBQyBAgAEEM6BwgjELADECc6BwgAEEcQ
+            sAM6BwgAELADEEM6BAgjECc6CAgAEIAEELEDOgUIABCABDoHCCMQ6gIQJzoNCC4QxwEQowIQ6gIQJzoNCC4QxwEQ0QMQ6gIQJ0oECEEYAEoECEYYAFDLCliCKmDDWGgCcAF4
+            BIABywGIAc8MkgEFMC44LjGYAQCgAQGwAQrIAQrAAQE&sclient=gws-wiz" class="right-btn">Read more...</a>
+        </div>
+       <div class="russia">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, laboriosam?</p>
+            <a href="https://www.google.com/search?q=russia+ukraine+war&rlz=1C1JJTC_enIN990IN990&oq=russia+ukr&aqs=chrome.4.0i20i263i433i512j
+            0i433i512j69i57j0i20i263i433i512j0i433i512l6.13412j1j15&sourceid=chrome&ie=UTF-8" class="right-btn">Read more...</a>
+        </div>
+        <div class="breeza">
+
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, laboriosam?</p>
+            <a href="https://www.cardekho.com/maruti/vitara-brezza-2022" class="right-btn">Read more...</a>
+        </div>
+       <div class="politics">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, laboriosam?</p>
+            <a href="https://www.firstpost.com/category/politics" class="right-btn">Read more...</a>
+        </div>
+  </section>
+
+    <!--To created the post section of these page-->
+    <section class="container" id="posts">
+          <div class="posts-container">
+             <div class="post">
+                <img src="gorrila3.jpg" alt="" class="image">
+                <h3 class="title">Gorilla shows off his dance moves</h3>
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum molestias rerum numquam,
+                    quos aut est culpa quisquam excepturi sed a inventore dicta tempore consequuntur possimus magnam
+                    corporis cum doloremque quasi fugiat exercitationem aliquid cupiditate pariatur. Dolor laboriosam
+                    voluptatem ex praesentium magni error debitis maxime alias autem distinctio. Fuga, esse velit!</p>
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, reiciendis fugiat
+                    quas nemo quia omnis repellat obcaecati quaerat voluptates fuga error dicta cupiditate pariatur
+                    soluta dolorum quis eum quibusdam quam?</p>
+                <div class="links">
+                    <a href="#" class="user">
+                        <i class="far fa-user"></i>
+                        <span>by admin</span>
+                    </a>
+                    <a href="#" class="icon">
+                        <i class="far fa-comment"></i>
+                        <span>(450)</span>
+                    </a>
+                    <a href="#" class="icon">
+                        <i class="far fa-share-square"></i>
+                        <span>(290)</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="post">
+                <img src="russia war3.jpg" alt="" class="image">
+                <h3 class="title">Russia threatens legal action if pushed into default</h3>
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum molestias rerum numquam,
+                    quos aut est culpa quisquam excepturi sed a inventore dicta tempore consequuntur possimus magnam
+                    corporis cum doloremque quasi fugiat exercitationem aliquid cupiditate pariatur. Dolor laboriosam
+                    voluptatem ex praesentium magni error debitis maxime alias autem distinctio. Fuga, esse velit!</p>
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, reiciendis fugiat
+                    quas nemo quia omnis repellat obcaecati quaerat voluptates fuga error dicta cupiditate pariatur
+                    soluta dolorum quis eum quibusdam quam?</p>
+                <div class="links">
+                    <a href="#" class="user">
+                        <i class="far fa-user"></i>
+                        <span>by admin</span>
+                    </a>
+                    <a href="#" class="icon">
+                        <i class="far fa-comment"></i>
+                        <span>(350)</span>
+                    </a>
+                    <a href="#" class="icon">
+                        <i class="far fa-share-square"></i>
+                        <span>(190)</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="post">
+                <img src="amazon3.jpg" alt="" class="image">
+                <h3 class="title">Amazon says New York union organizers gave workers weed to help secure unionization votes</h3>
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum molestias rerum numquam,
+                    quos aut est culpa quisquam excepturi sed a inventore dicta tempore consequuntur possimus magnam
+                    corporis cum doloremque quasi fugiat exercitationem aliquid cupiditate pariatur. Dolor laboriosam
+                    voluptatem ex praesentium magni error debitis maxime alias autem distinctio. Fuga, esse velit!</p>
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, reiciendis fugiat
+                    quas nemo quia omnis repellat obcaecati quaerat voluptates fuga error dicta cupiditate pariatur
+                    soluta dolorum quis eum quibusdam quam?</p>
+                <div class="links">
+                    <a href="#" class="user">
+                        <i class="far fa-user"></i>
+                        <span>by admin</span>
+                    </a>
+                    <a href="#" class="icon">
+                        <i class="far fa-comment"></i>
+                        <span>(550)</span>
+                    </a>
+                    <a href="#" class="icon">
+                        <i class="far fa-share-square"></i>
+                        <span>(349)</span>
+                    </a>
+                </div>
+            </div>
+          </div>
+          
+ <!--To created the today's top growing communities section in the sidebar-->
+        <div class="sidebar">
+              <div class="box">
+                <h3 class="title">Today's Top Growing Communities</h3>
+                <div class="category">
+                    <a href="#"> <img src="science3.webp" alt="#" class="right-logo">r/science<button class="right-btn">Join</button> </a>
+                    <a href="#"><img src="technology3.webp" alt="#" class="right-logo">r/Technology <button class="right-btn">Join</button></a>
+                    <a href="#"><img src="weird3.webp" alt="#" class="right-logo"> r/weird<button class="right-btn">Join</button>  </a>
+                    <a href="#"><img src="data3.webp" alt="#" class="right-logo"> r/dataisbeautiful  <button class="right-btn">Join</button></a>
+                    <a href="#"><img src="learning3.webp" alt="#" class="right-logo"> r/learnings <button class="right-btn">Join</button> </a>  
+                </div>
+            </div>
+<!--To create the popular posts section in sidebar-->
+            <div class="box">
+                <h3 class="title">popular posts</h3>
+                <div class="p-post">
+                    <a href="#">
+                       <h3> Cursed election</h3>
+                        <button class="right-btn">see more...</button>
+                    </a>
+                    <a href="#">
+                        <h3>Pulte on Twitter</h3>
+                        <button class="right-btn">see more...</button>
+                    </a>
+                    <a href="#">
+                        <h3>Movies</h3>
+                        <button class="right-btn">see more...</button>
+                    </a>
+                    <a href="#">
+                        <h3>Living his best life</h3>
+                        <button class="right-btn">see more...</button>
+                    </a>
+                </div>
+            </div>
+
+            <!--To create the popular communities section in sidebar-->
+             <div class="box">
+                <h3 class="title">popular communities</h3>
+                <div class="tags">
+                    <a href="#">travel</a>
+                    <a href="#">gamming</a>
+                    <a href="#">science</a>
+                    <a href="#">biology</a>
+                    <a href="#">aliens</a>
+                    <a href="#">nature</a>
+                    <a href="#">fashion</a>
+                    <a href="#">river</a>
+                    <a href="#">camp</a>
+                    <a href="#">landscape</a>
+                    <a href="#">world</a>
+                </div>
+            </div>
+        </div>
+  </section>
+ <script src="extra.js"></script>
+</body>
+</html>
