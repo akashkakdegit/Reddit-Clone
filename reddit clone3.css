@@ -1,3 +1,5 @@
+
+/*To create the variable for color*/
 :root{
     --orange:#e67e22;
     --black:#333;
@@ -6,6 +8,7 @@
     --box-shadow:3px 5px rgba(0,0,0,.1);
 }
 
+/*To add style to all element*/ 
 *{
     box-sizing: border-box;
     outline: none; 
@@ -14,24 +17,13 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: lighter;
 }
+
+/* To apply the css to html*/
 html{
    font-size: 62.5%;
 }
-/*.btn{
-    margin-top: 5px;
-    display: inline-block;
-    background:#fff;
-    color:rgb(0, 94, 255);
-    border: 2px solid rgb(0, 170, 255);
-    border-radius: 15px;
-    padding:10px 20px;
-    font-size: 15px;
-}*/
 
-/*.btn:hover{
-    background:rgb(0, 170, 255);
-    color:#fff
-}*/
+/*to add the style to button which is in heading section and sidebar section*/
 .right-btn{
     margin-top: 2px;
     margin-bottom: 5px;
@@ -44,17 +36,22 @@ html{
     padding-bottom:10px;
     font-size: 15px;
 }
+
+/* To add hover to button*/
 .right-btn:hover{
     background:rgb(0, 187, 255);
     color:#fff
 }
 
+/* To apply the style to logo in sidebar*/
 .right-logo{
     height: 40px;
     width: 35px;
     margin:10px;
     padding:1px;
 }
+
+/* To add style to search reddit bar in header*/
 .search-reddit
 {position: absolute;
     top: 11px;
@@ -64,21 +61,27 @@ html{
     border-radius: 10px;
 }
 
+/*To add style to reddit logo in header*/
 .logo-reddit{
     height: 40px;
     width: 35px;
     margin:10px;
     padding:1px;
 }
+
+/*To add style to search icon in header*/
 #search-icon
 { 
     padding:10px 10px;
     color:#777
 }
+
 #search-icon:hover
 {
     color:#333
 }
+
+/* To add style to banner section */
 .banner{
     background:rgb(74, 226, 145);
     background-position: center;
@@ -89,6 +92,8 @@ html{
     grid-template-columns: repeat(4,1fr);
     grid-gap:15px;
 }
+
+/* To add style to heading section */
 .heading{
     background:rgb(181, 237, 243);
     display: grid;
@@ -98,14 +103,17 @@ html{
    margin-top:100px;
 }
 
+/*To apply the css in all h1 tag*/
 h1{
     font-size: 20px;
 }
 
+/* To apply the css in all section tag*/
 section{
    padding:20px 7%;
 }
 
+/* to apply the style on header*/
 .header{
     position: fixed;
     top:0; left:0; right:0;
@@ -117,38 +125,52 @@ section{
     padding:12px 7%;
 }
 
+/*to apply the style to the name reddit*/
 .header .logo{
     color:var(--black);
     font-size: 25px;
     margin-right: auto;
 }
 
+/*to apply the style to the name reddit*/
 .header .logo span{
     color:var(--orange);
 }
- .banner .ipl, .russia, .breeza, .politics{
+
+/* To apply the style to all the background images in banner section*/
+.banner .ipl, .russia, .breeza, .politics{
    text-align: center;
    opacity:1px ;
    border-radius: 5px;
    box-shadow: var(--box-shadow);
    padding:20px;
 }
+
+/* To take background image in first coloumn of banner section*/
 .ipl{
 background-image:url("ipl3.jpg");
 background-size: cover;
 }
+
+/* To take background image in second coloumn of banner section*/
 .russia{
 background-image:url("russia3.jpg");
 background-size: cover;
 }
+
+/* To take background image in third coloumn of banner section*/
 .breeza{
 background-image:url("breeza3.jpg");
 background-size: cover;
 }
+
+/* To take background image in fourth coloumn of banner section*/
 .politics{
 background-image:url("politics3.jpg");
 background-size: cover;
 }
+
+/* To apply style to all the parragraph in banner section*/
 .banner  p{
     font-size: 20px;
     color:white;
@@ -156,6 +178,7 @@ background-size: cover;
     line-height: 1.5;
 }
 
+/* To apply the style on container */
 .container{
     display: grid;
     grid-template-columns: 2.5fr 1fr;
@@ -163,6 +186,7 @@ background-size: cover;
     background:rgb(181, 237, 243);
 }
 
+/* To apply the style on all post in container*/
 .container .posts-container .post{
     width:100%;
     padding:2rem;
@@ -172,6 +196,7 @@ background-size: cover;
     margin-bottom: 1.5rem;
 }
 
+/* To apply style to all images in container*/
 .container .posts-container .post .image{
     height: 40rem;
     width:100%;
@@ -179,12 +204,14 @@ background-size: cover;
     object-fit: cover;
 }
 
+/* To add style to all title in container*/
 .container .posts-container .post .title{
     padding-top: 1.5rem;
     font-size: 2.5rem;
     color:var(--black);
 }
 
+/* To apply style to all paragraph in container */
 .container .posts-container .post .text{
     color:var(--light-color);
     font-size: 1.6rem;
@@ -192,6 +219,7 @@ background-size: cover;
     padding:1rem 0;
 }
 
+/* To apply style at bottom of all post in container */
 .container .posts-container .links{
     border-top: var(--border);
     margin-top: .5rem;
@@ -200,10 +228,12 @@ background-size: cover;
     align-items: center;
 }
 
+/* To apply style on user at bottom of all post in container */
 .container .posts-container .links .user{
     margin-right: auto;
 }
 
+/* To apply style on icon at bottom of all post in container */
 .container .posts-container .links .icon{
     padding-right: 1rem;
 }
@@ -226,6 +256,7 @@ background-size: cover;
     color:var(--orange);
 }
 
+/* To add style to the all box in sidebar section*/
 .container .sidebar .box{
     border:var(--border);
     border-radius: .5rem;
@@ -234,6 +265,7 @@ background-size: cover;
     margin-bottom: 1.5rem;
 }
 
+/* To add style to title of the sidebar section */
 .container .sidebar .box .title{
     padding:1.5rem;
     font-size: 2rem;
@@ -242,10 +274,10 @@ background-size: cover;
 
 }
 
-
 .container .sidebar .box .category{
     padding:1rem 1.5rem;
 }
+
 
 .container .sidebar .box .category a{
     padding:.4rem 0;
@@ -260,6 +292,7 @@ background-size: cover;
     color:var(--orange);
 }
 
+/* To add the style to the popular posts section in sidebar */
 .container .sidebar .box .p-post{
     padding:10px 20px;
 }
@@ -278,6 +311,7 @@ background-size: cover;
     color:var(--orange);
 }
 
+/* To add the style to the popular communities section in sidebar */
 .container .sidebar .box .tags{
     padding:1rem;
 }
